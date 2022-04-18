@@ -5,7 +5,7 @@
 .winner {
     color: #000000;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -14,8 +14,31 @@
 .finalResult {
     color: #000000;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
+}
+
+.reset {
+    margin: 30px;
+    display: flex;
+    flex: space-around;
+    justify-content: center;
+    text-align: center;
+}
+
+.reset button {
+    background-color: rgb(107, 36, 104);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.reset button:hover {
+    transform: scale(1.12);
+    font-weight: bold;
 }
 
 .winner {
@@ -34,7 +57,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: 100ms;
 }
 
@@ -42,7 +65,12 @@
     transform: scale(1.12);
 }
 
+.card button img {
+    width: 300px;
+}
+
 .result {
+    /* margin: 2rem; */
     margin-top: 1rem;
     display: grid;
     justify-content: center;

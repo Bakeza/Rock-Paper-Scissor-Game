@@ -4,6 +4,14 @@ let yourScoreSpan = document.querySelector("[data-your-score]");
 let tieScoreSpan = document.querySelector("[data-tie-score]");
 let winner = document.querySelector(".winner");
 let finalResult = document.querySelector(".finalResult");
+let restart = document.querySelector("#restart");
+restart.addEventListener("click", e => {
+    computerScoreSpan.innerText = 0;
+    yourScoreSpan.innerText = 0;
+    tieScoreSpan.innerText = 0;
+    finalResult.innerText = "";
+    winner.innerText = "";
+})
 let SELECTIONS = [{
         name: "rock",
         beats: "scissor",
