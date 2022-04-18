@@ -1,0 +1,57 @@
+* {
+    background-color: azure;
+}
+
+.winner {
+    color: #000000;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.result,
+.winner,
+.finalResult {
+    color: #000000;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.winner {
+    color: red;
+}
+
+.card {
+    display: flex;
+    flex: space-around;
+    justify-content: center;
+}
+
+.card button {
+    margin: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+
+.card button:hover {
+    transform: scale(1.12);
+}
+
+.result {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.result .score {
+    margin-left: 1rem;
+    /* font-size: 0.5rem; */
+}
